@@ -5,7 +5,6 @@
 Using the frictionless framework to create data packages, resources, and schema for Life Cycle Inventory (LCI) data generated in the ALIGNED project.
 
 
-
 ### (Wait, I am not a programmer!)
 
 You can still use the material in this repository. All files can be opened and edited manually using a text editor (Notepad, TextEdit, etc.). You can modify the schema.json, datapackage.json, and resource.json files manually and use them as a starting point for documenting your data.
@@ -67,7 +66,7 @@ The suggested procedure is this
 
 4. If needed, based on the tabular structure of the data modify manually the ```schema.json``` file or create one automatically as shown in [create-schema.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-schema.py)
 
-5. Modify manually the datapackage.json file or create one automatically as shown in [ccreate-datapackage-with-metadata.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-datapackage-with-metadata.py)
+5. Modify manually the datapackage.json file or create one automatically as shown in [create-datapackage-with-metadata.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-datapackage-with-metadata.py) and add minimal metadata such as name, description, licenses, contributors... 
 
 6. Optionally (but recommended!) create a resource descriptor for each data file using the GLAD metadata fields. See [create-resource-with-glad-metadata.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-resource-with-glad-metadata.py)
 
@@ -78,13 +77,13 @@ The suggested procedure is this
 
 - formatted in a way that can be imported in open source LCA software 
 
-- whose format is clearly documented in a schema, that can be used to validate the datasets and spot errors but alsoo to properly read the data.
+- whose format is clearly documented in a schema, that can be used to validate the datasets and detect errors but also to properly read the data.
 
 - organized in files and directories with a standard structure
 
 - shared and accesible to others (if in a public repository)
 
-- that include essential standard metadata as well as domain-specific GLAD metadata that are recongnized by and relevant for the LCA community
+- that include the essential metadata as well as domain-specific GLAD metadata that are recognized by, and relevant for, the LCA community.
 
 
 ## Contact & info
