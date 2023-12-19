@@ -18,7 +18,7 @@ You can still use the material in this repository. All files can be opened and e
 
 - Is based on the [frictionless standards](https://specs.frictionlessdata.io/) for describing data. The python scripts use the [frictionless framework](https://framework.frictionlessdata.io/) and related libraries.
 
-- Uses the LCI data structure decribed in detail in this [zenodo archive](). This tabular structure mirrors the nomenclature and fields used in the [Brightway open LCA software framework](https://docs.brightway.dev/en/latest/).
+- Uses the LCI data format decribed in detail in this [zenodo archive](). This tabular format mirrors the nomenclature and fields used in the [Brightway open LCA software framework](https://docs.brightway.dev/en/latest/).
 
 - It is intended for both python and non-python users.
 
@@ -27,17 +27,17 @@ You can still use the material in this repository. All files can be opened and e
 - Allows to include GLAD metadata. GLAD is the [Global LCA Data Access Network](https://www.globallcadataaccess.org/).
 
 
-- Was developed within the ALIGNED project, [wwww.alignedproject.eu](wwww.alignedproject.eu) Horizon Europe grant agreement N° 101059430. [^1]
-
-
- ## Structure of the repository:
+## Structure of the repository
 
 
 Folder [aligned-schema](https://github.com/massimopizzol/aligned-datapackage/tree/main/aligned-schema): 
 
-- includes a base schema for the LCI data structure, the same documented in the [zenodo archive]().
--  In plain words, a [schema](https://specs.frictionlessdata.io/table-schema/#concepts) is here intended as a description of each column of a table of data. This allows to understand the type of data and what the table of data contains. 
+- includes a base schema for the LCI data format, the same documented in the [zenodo archive]().
+
+-  In plain words, a [schema](https://specs.frictionlessdata.io/table-schema/#concepts) is here intended as a description of each column of a table of data. This allows to understand the type of data and what is containes in the table of data. 
+
 -  This schema includes only the recommended, minimal fields to be used to share LCI data. Other fields can be added if needed.
+
 -  Once you have put your LCI data in table format, use this schema to document their structure.
 
 Folder [example-package](https://github.com/massimopizzol/aligned-datapackage/tree/main/example-package):
@@ -51,9 +51,12 @@ Folder [example-package](https://github.com/massimopizzol/aligned-datapackage/tr
 
 Folder [code-and-examples](https://github.com/massimopizzol/aligned-datapackage/tree/main/code-and-examples):
 
-- Is primarily for python users. 
-- Uses pythorn libraries from the [frictionless framework](https://framework.frictionlessdata.io/) 
+- Is primarily for python users.
+
+- Uses pythorn libraries from the [frictionless framework](https://framework.frictionlessdata.io/). 
+
 - Contains code that can be used to create descriptors for schema, datapackage, and resources.
+
 - In particular [create-resource-with-glad-metadata.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-resource-with-glad-metadata.py) shows how to add GLAD metadata to a LCI tabular resource.
 
 ## How to use
@@ -62,7 +65,7 @@ The suggested procedure is this
 
 1. Download a copy of the [example-package](https://github.com/massimopizzol/aligned-datapackage/tree/main/example-package) folder. 
 
-2. Prepare LCI data in tabular format using information in the [zenodo archive]() or in the ```aligned-schema.json``` file, example tables available in the repository [aligned-converter repositor](link) or in the [example-package/data](https://github.com/massimopizzol/aligned-datapackage/tree/main/example-package/data) folder. Save the files in .csv format in the ```Data``` subfolder.
+2. Prepare LCI data in tabular format using information in the [zenodo archive]() or in the ```aligned-schema.json``` file, example tables available in the repository [aligned-converter](https://github.com/massimopizzol/aligned-converter) repository or in the [example-package/data](https://github.com/massimopizzol/aligned-datapackage/tree/main/example-package/data) folder. Save the files in .csv format in the ```Data``` subfolder.
 
 4. If needed, based on the tabular structure of the data modify manually the ```schema.json``` file or create one automatically as shown in [create-schema.py](https://github.com/massimopizzol/aligned-datapackage/blob/main/code-and-examples/create-schema.py)
 
@@ -90,5 +93,8 @@ The suggested procedure is this
 
 [Massimo Pizzol](mailto:massimo@plan.aau.dk)
 
+## Funding
+
+This work was carried out within the ALIGNED project [wwww.alignedproject.eu](wwww.alignedproject.eu) Horizon Europe grant agreement N° 101059430 [^1].
 
 [^1]: _Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency. Neither the European Union nor the granting authority can be held responsible for them._
