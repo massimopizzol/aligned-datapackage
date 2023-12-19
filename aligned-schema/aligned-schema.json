@@ -1,0 +1,86 @@
+{
+  "fields": [
+    {
+      "name": "Activity database",
+      "type": "string",
+      "description": "An identifier for the dataset. In principle, a UUID can be used. However, we recommend a readable but sufficiently unique name. "
+    },
+    {
+      "name": "Activity code",
+      "type": "string",
+      "description": "Given either product exchange or environmental exchange  'ε', this is The UUID of the production exchange of the foreground activity where ε is located. Or the UUID of the environmental exchange"
+    },
+    {
+      "name": "Activity name",
+      "type": "string",
+      "description": "The name of the foreground activity where ε is located. While multiple activities can in principle have the same name, e.g. “electricity production” as produced by different technologies. We suggest being as specific as possible. Name should be readable and understandable."
+    },
+    {
+      "name": "Activity unit",
+      "type": "string",
+      "description": "The unit of the production exchange of the foreground activity where ε is located. Or the unit of the environmental exchange"
+    },
+    {
+      "name": "Activity type",
+      "type": "string",
+      "description": "Two types: “process” for product exchanges (technology matrix) and “biosphere” for environmental exchanges (intervention matrix)"
+    },
+    {
+      "name": "Exchange database",
+      "type": "string",
+      "description": "The identifier of the database where the exchange ε is located."
+    },
+    {
+      "name": "Exchange input",
+      "type": "string",
+      "description": "The UUID of ε. A computer generated UUIDs created by the user for foreground exchanges and taken from an existing list for background exchanges."
+    },
+    {
+      "name": "Exchange amount",
+      "type": "number",
+      "description": "The value of ε"
+    },
+    {
+      "name": "Exchange unit",
+      "type": "string",
+      "description": "The unit of ε"
+    },
+    {
+      "name": "Exchange type",
+      "type": "string",
+      "description": "Must be 'production' for the main output (reference flow, there must be one production exchange for each activity). 'Technosphere' for product exchanges other than the main output (e.g. Inputs and co-product outputs). 'Biosphere' for environmental exchanges."
+    },
+    {
+      "name": "Exchange uncertainty type",
+      "type": "integer",
+      "description": "See the stats_arrays package documentation here: https://stats-arrays.readthedocs.io/en/latest/#id22"
+    },
+    {
+      "name": "Exchange loc",
+      "type": "number",
+      "description": "See the stats_arrays package documentation here: https://stats-arrays.readthedocs.io/en/latest/#id22"
+    },
+    {
+      "name": "Exchange scale",
+      "type": "number",
+      "description": "See the stats_arrays package documentation here: https://stats-arrays.readthedocs.io/en/latest/#id22"
+    },
+    {
+      "name": "Exchange negative",
+      "type": "boolean",
+      "description": "'True', unless the 'amount' field is a negative number then use 'False'"
+    },
+    {
+      "name": "Simapro name",
+      "type": "string"
+    },
+    {
+      "name": "Simapro unit",
+      "type": "string"
+    },
+    {
+      "name": "Simapro type",
+      "type": "string"
+    }
+  ]
+}

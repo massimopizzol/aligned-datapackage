@@ -1,0 +1,43 @@
+{
+  "name": "aligned-template-datapackage",
+  "description": "A template datapackage used in the ALIGNED project",
+  "licenses": [
+    {
+      "name": "CC BY-SA 4.0 DEED",
+      "path": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "title": "Attribution-ShareAlike 4.0 International"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ALIGNED website",
+      "path": "www.alignedproject.eu"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Massimo Pizzol",
+      "email": "massimo@plan.aau.dk",
+      "path": "https://vbn.aau.dk/en/persons/117459",
+      "role": "Author"
+    }
+  ],
+  "resources": [
+    {
+      "name": "dummy-lci-table-format",
+      "type": "table",
+      "path": "data/dummy-lci-table-format.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "seaweed-inventory",
+      "type": "table",
+      "path": "data/seaweed-inventory.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv"
+    }
+  ]
+}
