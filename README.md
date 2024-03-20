@@ -18,7 +18,7 @@ You can still use the material in this repository. All files can be opened and e
 
 - Is based on the [frictionless standards](https://specs.frictionlessdata.io/) for describing data. The python scripts use the [frictionless framework](https://framework.frictionlessdata.io/) and related libraries.
 
-- Uses the LCI data format decribed in detail in this [zenodo archive]((https://doi.org/10.5281/zenodo.10843472)). This tabular format mirrors the nomenclature and fields used in the [Brightway2](https://docs.brightway.dev/en/latest/) open LCA software framework.
+- Uses the LCI data format decribed in detail in this [ALIGNED T1.2 LCI data template zenodo archive](https://doi.org/10.5281/zenodo.10843472). This tabular format mirrors the nomenclature and fields used in the [Brightway2](https://docs.brightway.dev/en/latest/) open LCA software framework.
 
 - It is intended for both python and non-python users.
 
@@ -32,7 +32,7 @@ You can still use the material in this repository. All files can be opened and e
 
 Folder [aligned-schema](https://github.com/massimopizzol/aligned-datapackage/tree/main/aligned-schema): 
 
-- includes a base schema for the LCI data format, the same documented in the [zenodo archive](https://doi.org/10.5281/zenodo.10843472).
+- includes a base schema for the LCI data format, the same documented in the [ALIGNED T1.2 LCI data template zenodo archive](https://doi.org/10.5281/zenodo.10843472).
 
 -  In plain words, a [schema](https://specs.frictionlessdata.io/table-schema/#concepts) is here intended as a description of each column of a table of data. This allows to understand the type of data and what is contained in the table of data. 
 
