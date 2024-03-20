@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/732088015.svg)](https://zenodo.org/doi/10.5281/zenodo.10845921)
+
 # Readme
 
 ## aligned-datapackage
